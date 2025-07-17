@@ -14,6 +14,7 @@
 
 ## 📂 Project Structure
 
+```
 QtWidgetPluginFramework/
  ├── Common/
  │   ├── PluginManager/
@@ -25,14 +26,16 @@ QtWidgetPluginFramework/
  ├── LICENSE
  ├── .gitignore
  └── ATTRIBUTION.md
+```
 
 ## 🚀 Build & Run
 
 1. Install **Qt (5.x or 6.x) Visual Studio integration**.
 2. Open `QtWidgetPluginFramework.sln` in Visual Studio.
 3. Build **PluginA**, **PluginB**, then **QtWidgetPluginFramework**.
-4. Run **QtWidgetPluginFramework.exe**.
-5. Click different buttons to load and switch plugin UIs dynamically.
+4. Make sure **PluginA.dl**l, **PluginB.dll** and **QtWidgetPluginFramework.exe**. are in the same path
+5. Run **QtWidgetPluginFramework.exe**.
+6. Click different buttons to load and switch plugin UIs dynamically.
 
 ## 📌 Assets / Icons Credit
 
@@ -46,4 +49,4 @@ This project is licensed under the MIT License. See [LICENSE](LICENSE) for detai
 
 ---
 
-© 2025 https://github.com/Kws128
+© 2025 Kws128
