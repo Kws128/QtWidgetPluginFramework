@@ -37,6 +37,14 @@ QtWidgetPluginFramework/
 5. Run **QtWidgetPluginFramework.exe**.
 6. Click different buttons to load and switch plugin UIs dynamically.
 
+## 🚀 Demo
+
+Below are the screenshots of **QtWidgetPluginFramework** running with PluginA and PluginB loaded as Qt DLL QWidget plugins.
+
+![](./running-PluginA.jpg)
+
+![](./running-PluginB.jpg)
+
 ## 📌 Assets / Icons Credit
 
 - Some icons used in this project are sourced from [Yesicon](https://yesicon.app/).  
