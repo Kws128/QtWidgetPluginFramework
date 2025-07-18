@@ -25,6 +25,8 @@ QtWidgetPluginFramework/
  ├── README.md
  ├── LICENSE
  ├── .gitignore
+ ├── running-PluginA.jpg
+ ├── running-PluginB.jpg
  └── ATTRIBUTION.md
 ```
 
