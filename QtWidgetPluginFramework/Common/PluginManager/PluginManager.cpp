@@ -68,11 +68,11 @@ PluginErrorCode PluginManager::UnLoadPlugin(const std::string& path)
 
 PluginErrorCode PluginManager::ReLoadPlugin(const std::string& path, PluginContext* ctx)
 {
-	std::lock_guard<std::mutex> lock(m_mutex);
-
 	auto ret  = UnLoadPlugin(path);
 	if ( ret != PluginErrorCode::Success)
 		return ret;
+	
+	std::lock_guard<std::mutex> lock(m_mutex);
 
 	return LoadPlugin(path, ctx);
 }
@@ -100,6 +100,7 @@ void PluginManager::ExecuteAll()
 void PluginManager::UnloadAll()
 {
 	std::lock_guard<std::mutex> lock(m_mutex);
+	
 	for (auto iter = m_plugins.begin(); iter != m_plugins.end();)
 	{
 		if (iter->second.instance)
